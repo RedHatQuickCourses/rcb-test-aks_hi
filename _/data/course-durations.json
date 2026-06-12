@@ -1,6 +1,6 @@
 {
-  "totalSeconds": 428,
-  "pageCount": 15,
+  "totalSeconds": 1156,
+  "pageCount": 12,
   "pages": [
     {
       "module": "ROOT",
@@ -13,69 +13,54 @@
       "seconds": 4
     },
     {
-      "module": "chapter1",
-      "page": "index.adoc",
-      "seconds": 9
+      "module": "introduction",
+      "page": "introduction.adoc",
+      "seconds": 28
     },
     {
-      "module": "chapter1",
-      "page": "section1.adoc",
-      "seconds": 9
+      "module": "introduction",
+      "page": "overview-of-rhel-lightspeed.adoc",
+      "seconds": 161
     },
     {
-      "module": "chapter1",
-      "page": "section2.adoc",
-      "seconds": 9
+      "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "using-the-command-line-assistant-powered-by-rhel-lightspeed.adoc",
+      "seconds": 68
     },
     {
-      "module": "chapter1",
-      "page": "section3.adoc",
-      "seconds": 9
+      "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "introduction-to-the-command-line-assistant.adoc",
+      "seconds": 176
     },
     {
-      "module": "chapter1",
-      "page": "tabs-demo.adoc",
-      "seconds": 20
+      "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "interaction-with-the-command-line-assistant-using-plain-language.adoc",
+      "seconds": 136
     },
     {
-      "module": "chapter1",
-      "page": "collapsible-demo.adoc",
-      "seconds": 36
+      "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "assistance-with-rhel-related-tasks.adoc",
+      "seconds": 152
     },
     {
-      "module": "chapter1",
-      "page": "images.adoc",
-      "seconds": 271
+      "module": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.adoc",
+      "seconds": 51
     },
     {
-      "module": "chapter2",
-      "page": "index.adoc",
-      "seconds": 9
+      "module": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "performing-tasks-using-the-command-line-assistant.adoc",
+      "seconds": 233
     },
     {
-      "module": "chapter2",
-      "page": "section1.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter3",
-      "page": "index.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter3",
-      "page": "section1.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter3",
-      "page": "section2.adoc",
-      "seconds": 9
+      "module": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed",
+      "page": "exploring-additional-features-and-functionalities.adoc",
+      "seconds": 129
     },
     {
       "module": "appendix",
       "page": "appendix.adoc",
-      "seconds": 1
+      "seconds": 3
     }
   ]
 }
