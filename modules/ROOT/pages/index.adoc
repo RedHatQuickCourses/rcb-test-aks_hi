@@ -1,27 +1,27 @@
-= An Example Quick Course
-:navtitle: Home
+= आईएलई लाइटस्पीड
+:navtitle: घर
 
-== Introduction
+== परिचय
 
-Course Title: Course title FIXME
+कोर्स शीर्षक:  आईएलई लाइटस्पीड
 
-Description:
-Course description FIXME
+विवरण:
+कोर्स विवरण FIXME
 
-Duration: pass:[<span class="course-total-duration" aria-live="polite">…</span>]
+अवधि: FIXME घंटे
 
-== Objectives
+== कोर्स में कवर किए गए विषय
 
-On completing this course, you should be able to:
+*  परिचय
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+*  कमांड लाइन सहायक का उपयोग, आईएलई लाइटस्पीड से प्रभावित
 
-== Prerequisites
+*  हांड्सऑन लैब: कमांड लाइन सहायक का उपयोग, आईएलई लाइटस्पीड से प्रभावित
 
-This course assumes that you have the following prior experience:
+== पूर्व अनुभव
 
-* Course or experience...
-* Course or experience...
-* Course or experience...
+इस कोर्स के लिए, आपको निम्नलिखित पूर्व अनुभव होना चाहिए:
+
+* कोर्स या अनुभव...
+* कोर्स या अनुभव...
+* कोर्स या अनुभव...

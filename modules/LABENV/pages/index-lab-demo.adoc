@@ -1,27 +1,25 @@
-= Lab Environment
+= लैब परिवहन
 
-== Instructions to Launch Your Lab on the Red Hat Demo Platform (RHDP)
+== Red Hat Demo Platform (RHDP) पर लैब लॉन्च करने के लिए प्रणाली
 
-. **Log in** to the xref:#RHDP-Portal-Links[RHDP portal]
-. **Search** for the catalog entry: **FIXME Lab Catalog Name**.
-. **Click** on the catalog entry in the search results.
-. On the catalog page, **click** the **Order** button.
-. **Fill out** the required details in the order form.
-. **Review the warning** at the bottom of the form and **check the box** labeled: +
-   *“I confirm that I understand the above warnings.”*
-. **Click** the **Order** button to place your lab order.
+. **लॉग इन** करें RHDP पोर्टल के साथ [RHDP-Portal-Links]
+. **खोज** करें क्यालॉग प्रकार: **FIXME लैब कैलेंडर नाम**.
+. **सरफ़ाई** सरफ़ाई पर सिफारिश में प्रकाशित प्रकार को निर्धारित करें।
+. लैब पेज पर, **आजादी** बटन पर क्लिक करें।
+. आवश्यक विवरण को आवश्यकता फॉर्म में भरें।
+. फॉर्म के नीचे दिए गए चेतावनी को समझें और निर्देशित शब्द "I confirm that I understand the above warnings." के लिए चोट चुनें।
+. **आजादी** बटन पर क्लिक करके आपका लैब आदेश स्थापित करें।
 
-=== Important Notes:
-- This lab may take approximately **FIXME minutes** to become ready.
-- You will receive an **email with access details** once your lab environment is ready.
-- You can also **retrieve lab access** directly from the RHDP portal.
+=== महत्वपूर्ण नोट:
+- यह लैब केवल लगभग **FIXME** मिनट तक तैयार हो सकता है।
+- आपको लैब पर अनुमति विवरणों के साथ एमेल मिलेगा जब आपका लैब परिवहन तैयार होगा।
+- आप भी RHDP पोर्टल से स्रोत पर लैब अनुमति खोज सकते हैं।
 
-=== How to Access Your Lab via the RHDP Portal:
-. On the RHDP portal, **click** on the **Services** option in the left-hand menu.
-. **Select your lab** from the listings on the right-hand side of the page to view access details.
+=== RHDP पोर्टल से लैब पहुंचने के तरीके:
+. RHDP पोर्टल पर, बाय मेनू में **सेवाओं** को चयन करें।
+. दिखाई देने के लिए पृष्ठ के बाहर स्थित प्रकारों से अपना लैब चुनें।
 
 [[RHDP-Portal-Links]]
-=== RHDP Portal Links
-- RedHat associates: https://demo.redhat.com/[https://demo.redhat.com/,window=_blank]
-- RedHat partners: https://partner.demo.redhat.com/[https://partner.demo.redhat.com/,window=_blank]
-
+=== RHDP पोर्टल लिंक
+- RedHat एसोसिएट: https://demo.redhat.com/[https://demo.redhat.com/,window=_blank]
+- RedHat पार्टनर: https://partner.demo.redhat.com/[https://partner.demo.redhat.com/,window=_blank]
