@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय :: RHEL Lightspeed</title>
+    <link rel="prev" href="using-the-command-line-assistant-powered-by-rhel-lightspeed.html">
+    <link rel="next" href="interaction-with-the-command-line-assistant-using-plain-language.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi-1" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">घर</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">प्रयोग परिवहन</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introduction/introduction.html">परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction/overview-of-rhel-lightspeed.html">रीड हैट लाइटस्पीड का सारांश</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="introduction-to-the-command-line-assistant.html">रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="interaction-with-the-command-line-assistant-using-plain-language.html">आईटी सहायक के साथ सामान्य भाषा के साथ संवाद करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="assistance-with-rhel-related-tasks.html">RHEL संबंधित कार्यों के लिए सहायता</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/performing-tasks-using-the-command-line-assistant.html">आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/exploring-additional-features-and-functionalities.html">अधिक विशेषताओं और क्षमताओं का अन्वेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">सूत्र</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a></li>
+    <li><a href="introduction-to-the-command-line-assistant.html">रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</h1>
+<h1 id="_रलज_लइटसपड_स_परपत_आईएल_सहयक_क_बर_म_परचय" class="sect0"><a class="anchor" href="#_रलज_लइटसपड_स_परपत_आईएल_सहयक_क_बर_म_परचय"></a>रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</h1>
+<div class="sect1">
+<h2 id="_रलज_लइटसपड_क_सकषपत_समझ"><a class="anchor" href="#_रलज_लइटसपड_क_सकषपत_समझ"></a>रिलीज लाइटस्पीड का संक्षिप्त समझ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>रिलीज एल (Red Hat Enterprise Linux) लाइटस्पीड एक नवाचारी तकनीक है जो आईआई कोपी को रिलीज एल कमांड लाइन इंटरफेस (CLI) में एकसाथ बंधित करता है। यह बंधन उपयोगकर्ताओं को रिलीज एल प्रणालियों को निर्माण, प्रबंधन, और ट्रूडलिंग में आईआई-आधारित विशेषज्ञता का लाभ लेने के लिए अनुकूलित करता है। यह तकनीक का मूल बिंदु आईएल सहायक है, जो जटिल कार्यों को सरल बनाने और सामान्य रूप से सहायता प्रदान करने के लिए डिज़ाइन किया गया है।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_रलज_लइटसपड_स_परपत_आईएल_सहयक_क_उपयग"><a class="anchor" href="#_रलज_लइटसपड_स_परपत_आईएल_सहयक_क_उपयग"></a>रिलीज लाइटस्पीड से प्राप्त आईएल सहायक का उपयोग</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>रिलीज लाइटस्पीड से प्राप्त आईएल सहायक एक एक्टिव टूल है जो उपयोगकर्ताओं को सिंपल भाषा के साथ संपर्क में लाने के लिए अनुकूलित किया गया है। यह अंतर्निहित प्रक्रियाओं के ज्ञान को साफ बनाता है, जिससे सभी स्किल स्तर के उपयोगकर्ताओं को यह संदर्भ देता है।</p>
+</div>
+<div class="sect2">
+<h3 id="_1_आईएल_सहयक_क_बर_म_परचय"><a class="anchor" href="#_1_आईएल_सहयक_क_बर_म_परचय"></a>1. आईएल सहायक के बारे में परिचय</h3>
+<div class="paragraph">
+<p>आईएल सहायक एक आईआई ड्राइवन टूल है जो रिलीज एल CLI में रहता है। यह उपयोगकर्ताओं के संदेशों को चर्चाविहीन ढंग से समझने और प्रतिक्रिया देने के लिए डिज़ाइन किया गया है, विभिन्न रिलीज एल संबंधित कार्यों के साथ सहायता प्रदान करने के लिए।</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_2_समनय_भष_स_आईएल_सहयक_सपरक_म"><a class="anchor" href="#_2_समनय_भष_स_आईएल_सहयक_सपरक_म"></a>2. सामान्य भाषा से आईएल सहायक संपर्क में</h3>
+<div class="paragraph">
+<p>रिलीज लाइटस्पीड से प्राप्त आईएल सहायक संपर्क में किफायती और अनुभवी है। उपयोगकर्ताओं को प्राचीन कमांड या संक्षिप्त संदर्भ को याद रखने की आवश्यकता नहीं है, उन्हें प्राचीन कमांड या संक्षिप्त संदर्भ के साथ संपर्क करने के लिए सामान्य भाषा का उपयोग करना होगा। सहायक इनपुट को प्रोसेस करता है, संदर्भ खोजता है, और उपयुक्त प्रतिक्रिया प्रदान करता है।</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_3_रलज_एल_सबधत_करय_म_सहयत"><a class="anchor" href="#_3_रलज_एल_सबधत_करय_म_सहयत"></a>3. रिलीज एल संबंधित कार्यों में सहायता</h3>
+<div class="paragraph">
+<p>रिलीज लाइटस्पीड से प्राप्त आईएल सहायक विभिन्न रिलीज एल संबंधित कार्यों में सहायता कर सकता है, जिसमें प्रतिबिंबित नहीं किया गया है:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>प्रणाली कॉन्फिगरेशन और प्रबंधन</p>
+</li>
+<li>
+<p>आम समस्याओं का ट्रूडलिंग</p>
+</li>
+<li>
+<p>समस्याओं को सरल ढंग से प्रदर्शन करना</p>
+</li>
+<li>
+<p>रिलीज एल कमांडों और अंतर्निहित विषयों को समझना और सीखना</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>सहायक के आईआई क्षमताएं उन्हें संदर्भ संबंधी और संदर्भ से अवगत उपयोगकर्ताओं के लिए सही उत्तर प्रदान करने में सक्षम बनाती हैं, इसलिए नैतिक और अनुभवी रिलीज एल उपयोगकर्ताओं के लिए एक अत्यंत महत्वपूर्ण साधन है।</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_परयगतमक_पठयकरम_रलज_लइटसपड_स_परपत_आईएल_सहयक_क_उपयग"><a class="anchor" href="#_परयगतमक_पठयकरम_रलज_लइटसपड_स_परपत_आईएल_सहयक_क_उपयग"></a>प्रयोगात्मक पाठ्यक्रम: रिलीज लाइटस्पीड से प्राप्त आईएल सहायक का उपयोग</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>इस प्रयोगात्मक पाठ्यक्रम में, आप रिलीज लाइटस्पीड से प्राप्त आईएल सहायक की क्षमताओं का अन्वेषण करेंगे। आप सहायक से संपर्क करने के तरीके, सामान्य भाषा के साथ कार्य करने के तरीके, और अतिरिक्त विशेषताओं और क्यापेबिलिटीज खोजेंगे।</p>
+</div>
+<div class="paragraph">
+<p><strong>अनुप्रेरणा:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>एक चालू होने वाला रिलीज एल संसाधन</p>
+</li>
+<li>
+<p>रिलीज एल CLI को समझने के बारे में बसिक समझ</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>चरण:</strong></p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>आईएल सहायक का शुरूआत</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>अपने रिलीज एल CLI से आईएल सहायक शुरू करना शुरू करें। यह आप `rhel-lightspeed` टाइप करके Enter दबाकर कर सकते हैं।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>सहायक से संपर्क</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>सहायक चालू होने के बाद, आप सामान्य भाषा के साथ सहायक से संपर्क कर सकते हैं। उदाहरण के लिए, आप "प्रणाली की डिस्क उपयोग पर चित्रण कैसे करें?" कह सकते हैं। सहायक आपके प्रश्न को प्रोसेस करेगा, संदर्भ खोजेगा, और एक उपयुक्त प्रतिक्रिया प्रदान करेगा।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>कार्य करना</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>सहायक का उपयोग करके विभिन्न कार्य करें, जैसे कि सॉफ्टवेयर पैकेज के स्थापन करना, उपयोगकर्ता प्रबंधन या नेटवर्क सेटअप करना। सहायक प्रत्येक कदम के साथ आपके साथ होगा, प्रतिक्रिया और अधिकार प्रदान करता है।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>अतिरिक्त विशेषताओं का अन्वेषण</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>आईएल सहायक ने कई उन्नत विशेषताओं प्रदान की हैं, जैसे कि दस्तावेज़ के साथ संपर्क करने की क्षमता, कोड निर्देशों का प्रदर्शन, और ट्रूडलिंग सुझाव प्रदान करने की क्षमता। कुछ समय इन विशेषताओं का अन्वेषण करें, जिससे अपने समझ और दक्षता को बढ़ाया जा सके।</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>इस पाठ्यक्रम के अंत में, आप रिलीज लाइटस्पीड से प्राप्त आईएल सहायक का उपयोग करके रिलीज एल प्रबंधन कार्यों को सरल बनाने के लिए एक मजबूत समझ प्राप्त करेंगे।</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a></span>
+  <span class="next"><a href="interaction-with-the-command-line-assistant-using-plain-language.html">आईटी सहायक के साथ सामान्य भाषा के साथ संवाद करना</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

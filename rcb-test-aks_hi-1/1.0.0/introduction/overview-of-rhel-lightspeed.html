@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>रीड हैट लाइटस्पीड का सारांश :: RHEL Lightspeed</title>
+    <link rel="prev" href="introduction.html">
+    <link rel="next" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/using-the-command-line-assistant-powered-by-rhel-lightspeed.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi-1" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">घर</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">प्रयोग परिवहन</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="introduction.html">परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="overview-of-rhel-lightspeed.html">रीड हैट लाइटस्पीड का सारांश</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/introduction-to-the-command-line-assistant.html">रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/interaction-with-the-command-line-assistant-using-plain-language.html">आईटी सहायक के साथ सामान्य भाषा के साथ संवाद करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/assistance-with-rhel-related-tasks.html">RHEL संबंधित कार्यों के लिए सहायता</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/performing-tasks-using-the-command-line-assistant.html">आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/exploring-additional-features-and-functionalities.html">अधिक विशेषताओं और क्षमताओं का अन्वेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">सूत्र</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="introduction.html">परिचय</a></li>
+    <li><a href="overview-of-rhel-lightspeed.html">रीड हैट लाइटस्पीड का सारांश</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">रीड हैट लाइटस्पीड का सारांश</h1>
+<h1 id="_रड_हट_लइटसपड_क_सरश" class="sect0"><a class="anchor" href="#_रड_हट_लइटसपड_क_सरश"></a>रीड हैट लाइटस्पीड का सारांश</h1>
+<div class="sect1">
+<h2 id="_परचय"><a class="anchor" href="#_परचय"></a>परिचय</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>रीड हैट लाइटस्पीड एक बुद्धिमान फ़ंक्शनलिटी है जो आपके Red Hat Enterprise Linux (RHEL) सिस्टम इन्टरनेट को प्रभावित करने के लिए डिज़ाइन किया गया है। यह आपके RHEL सिस्टम मैनेजमेंट को अधिक सुगम बनाने के लिए एक विशेष समूह फ़ंक्शनलिटी है, अनुभव के साथ किसी भी स्तर पर सिस्टम एडमिनिस्ट्रेशन संभावित बनाता है।</p>
+</div>
+<div class="paragraph">
+<p>रीड हैट लाइटस्पीड यह संभव करता है कि विशिष्ट कंप्लेक्स टास्क्स को सरल बनाएं, सादगीर सहायता प्रदान करें और सिस्टम पर अधिक प्रभावी मैनेजमेंट प्रोमोट करें। ये फ़ंक्शनलिटी विभिन्न रीड हैट इकोसिस्टम कंपोनेंट्स में शामिल किए गए हैं, जैसे कि कॉमांड-लाइन इंटरफेस, ग्राफिकल यूज़र इंटरफेस, और ऑटोमेशन टूल्स।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_रड_हट_लइटसपड_क_मखय_फकशनलट"><a class="anchor" href="#_रड_हट_लइटसपड_क_मखय_फकशनलट"></a>रीड हैट लाइटस्पीड के मुख्य फ़ंक्शनलिटी</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>बुद्धिमान सहायता</strong>: रीड हैट लाइटस्पीड नेटवर्किंग प्रोसेसिंग का उपयोग करके बुद्धिमान सहायक प्रदान करता है, जो संदर्भ समझने और उत्तर देने के लिए संदेशों को समझता है। यह संदर्भ समझने के लिए संदेशों को सादे भाषा में प्रस्तुत करने की अनुमति देता है, जिससे उपयोगकर्ता संदर्भ के साथ संचार कर सकते हैं और विशिष्ट कॉमांडों को याद नहीं करना पड़ता।</p>
+</li>
+<li>
+<p><strong>टास्क ऑटोमेशन</strong>: रीड हैट लाइटस्पीड प्रतिदिनी टास्क्स को ऑटोमेट कर सकता है, जिससे समय बचत होता है और मानवीय त्रुटि को कम किया जा सकता है। यह फ़ंक्शनलिटी अनुभवी उपयोगकर्ताओं के लिए बहुत लाभदायक है, जो नियमित मैनिटेनेंस या कॉन्फिगरेशन टास्क्स करना चाहते हैं।</p>
+</li>
+<li>
+<p><strong>प्रोएक्टिव मॉनिटरिंग और अलर्ट</strong>: रीड हैट लाइटस्पीड में प्रोएक्टिव मॉनिटरिंग के फ़ंक्शनलिटी शामिल है, जो गलतियों के लिए पहले से ही चिंताजनक समस्याओं को पहचान सकता है। यह प्रतिक्रिया के लिए प्रदर्शन कर सकता है और प्रतिक्रिया के लिए प्रतिक्रिया प्रदान कर सकता है।</p>
+</li>
+<li>
+<p><strong>सिम्पलिफाइड ट्रूडब्लिंग</strong>: रीड हैट लाइटस्पीड ट्रूडब्लिंग में सहायता प्रदान करता है जिससे संदर्भ-संबंधित सहायता और सुझाव प्रदान किए जाते हैं। यह लॉग एंट्री को समझने में मदद कर सकता है, समस्या के मूल परिणाम को पहचानने में मदद कर सकता है और समाधान प्रस्ताव करने में मदद कर सकता है।</p>
+</li>
+<li>
+<p><strong>अधिक सुरक्षा</strong>: रीड हैट लाइटस्पीड सिस्टम को संभावित खतरों से बचाने में मदद करता है जिसमें ऑटोमेटिक वैल्यूएशन स्कैनिंग, समायोजन चेक, और सुरक्षित सेटअप प्रोसेस सुझाव शामिल हैं।</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_रड_हट_लइटसपड_क_लभ"><a class="anchor" href="#_रड_हट_लइटसपड_क_लभ"></a>रीड हैट लाइटस्पीड के लाभ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>रीड हैट लाइटस्पीड अनुभवी और अनुभव कम से अनुभवी RHEL उपयोगकर्ताओं के लिए विशेष लाभ प्रदान करता है:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>संचार करने में सरलता</strong>: संबंधित कंप्लेक्स टास्क्स को सरल बनाने और सादगीर सहायता प्रदान करने से, रीड हैट लाइटस्पीड ने RHEL को अनुभव कम से अनुभवी उपयोगकर्ताओं को अधिक संचार करने में सहायता की है।</p>
+</li>
+<li>
+<p><strong>दृढ़ता को बढ़ाना</strong>: टास्क ऑटोमेशन और प्रोएक्टिव मॉनिटरिंग से अनुभवी उपयोगकर्ताओं को अधिक दृढ़ता से काम करने में सहायता मिलती है, जिससे वे उचित समय में उचित गति से उचित गति से काम कर सकते हैं।</p>
+</li>
+<li>
+<p><strong>बेहतर सिस्टम स्थिरता</strong>: रीड हैट लाइटस्पीड के प्रोएक्टिव मॉनिटरिंग और ट्रूडब्लिंग क्षमताओं से एक अधिक स्थिर और विश्वसनीय सिस्टम इन्टरनेट बनाया जा सकता है।</p>
+</li>
+<li>
+<p><strong>अधिक सुरक्षा</strong>: रीड हैट लाइटस्पीड के सुरक्षा फ़ंक्शनलिटी सिस्टम को संभावित खतरों से बचाने में मदद करती है और संबंधित नियमों और नियतियों के अनुसार समायोजन और समाधान के लिए सुरक्षित सेटअप प्रोसेस सुझाव देती है।</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>आगे के सेक्शनों में, हम रीड हैट लाइटस्पीड प्रोडक्ट के साथ संबंधित कॉमांड-लाइन असिस्टेंट प्रदर्शन को प्रशिक्षण देंगे और एक हांड्स-ऑन लैब एक्टिविटी प्रदान करेंगे जो आपको यह शक्तिशाली टूल का प्रारंभ करने में मदद करेगा।</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="introduction.html">परिचय</a></span>
+  <span class="next"><a href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

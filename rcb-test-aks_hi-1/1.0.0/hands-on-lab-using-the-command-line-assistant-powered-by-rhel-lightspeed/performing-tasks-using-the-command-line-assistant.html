@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना :: RHEL Lightspeed</title>
+    <link rel="prev" href="hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">
+    <link rel="next" href="exploring-additional-features-and-functionalities.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi-1" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">घर</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">प्रयोग परिवहन</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introduction/introduction.html">परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction/overview-of-rhel-lightspeed.html">रीड हैट लाइटस्पीड का सारांश</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/introduction-to-the-command-line-assistant.html">रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/interaction-with-the-command-line-assistant-using-plain-language.html">आईटी सहायक के साथ सामान्य भाषा के साथ संवाद करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant-powered-by-rhel-lightspeed/assistance-with-rhel-related-tasks.html">RHEL संबंधित कार्यों के लिए सहायता</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="performing-tasks-using-the-command-line-assistant.html">आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="exploring-additional-features-and-functionalities.html">अधिक विशेषताओं और क्षमताओं का अन्वेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">सूत्र</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a></li>
+    <li><a href="performing-tasks-using-the-command-line-assistant.html">आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना</h1>
+<h1 id="_आधरत_आधर_सहयक_rhel_lightspeed_सहयक_क_सथ_करय_करन" class="sect0"><a class="anchor" href="#_आधरत_आधर_सहयक_rhel_lightspeed_सहयक_क_सथ_करय_करन"></a>आधारित आधार सहायक (RHEL Lightspeed सहायक) के साथ कार्य करना</h1>
+<div class="sect1">
+<h2 id="_परचय"><a class="anchor" href="#_परचय"></a>परिचय</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>आधारित आधार सहायक (RHEL Lightspeed सहायक), आपके Red Hat Enterprise Linux (RHEL) प्रणालियों पर विभिन्न कार्यों को सरल और सुगम करने के लिए डिज़ाइन किया गया है। इस टूल ने सामान्य भाषा प्रश्नों को समझने के साथ-साथ संबंधित सहायता प्रदान करने के लिए विज्ञान और मशीन लर्निंग का उपयोग किया है। इस खंड में, हम आधारित आधार सहायक का प्रयोग करके कार्य करने के तरीके को परखेंगे और इसके अतिरिक्त सुविधाओं और संभावितताओं का अन्वेषण करेंगे।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_आधरत_आधर_सहयक_क_सथ_करय_करन"><a class="anchor" href="#_आधरत_आधर_सहयक_क_सथ_करय_करन"></a>आधारित आधार सहायक के साथ कार्य करना</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>आधारित आधार सहायक का उपयोग करके कार्य करने के लिए, निम्नलिखित चरणों का पालन करें:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>आधार संपर्क संस्कृति पहुंचना</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>आपके RHEL प्रणाली के लिए एक टेरमिनल विंडो खोलें। यह आपके साथ आधारित आधार सहायक संपर्क करने के लिए एक आधार संस्कृति प्रदान करेगा।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>आधारित आधार सहायक शुरू करना</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>आधारित आधार सहायक का उपयोग करना शुरू करने के लिए, निम्नलिखित आदेश टाइप करें:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>```
+$ c
+```</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>यह आधारित आधार सहायक शुरू कर देगा, आपके प्रश्नों को स्वीकार करने के लिए तैयार हो जाएगा।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>प्रश्न बनाना</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>आधारित आधार सहायक का उपयोग करते समय, सामान्य भाषा में आपके प्रश्न बनाएं। उदाहरण के लिए, sshd सेवा को स्टार्ट नहीं हो रही है और इस मुद्दे का समाधान चाहते हैं, आप निम्नलिखित आदेश टाइप कर सकते हैं:</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>```
+$ c "sshd service not starting का समाधान कैसे खोजें"
+```</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>आधारित आधार सहायक आपके प्रश्न को प्राप्त करेगा और संबंधित सहायता प्रदान करेगा।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>सहायक के प्रतिक्रिया को पढ़ना</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>प्रश्न भेजने के बाद, आधारित आधार सहायक विज्ञान और मशीन लर्निंग (LLM) प्रदार्शक का उपयोग करके आईएनएफ इनफरेंस करता है। इनफरेंस को पूरा करने के बाद, आपको प्रश्न के साथ संबंधित चरणों या सूचना प्राप्त होगी।</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>उदाहरण के लिए, सहायक शहरध के स्थिति के परिणाम के परिणाम के साथ-साथ लॉग समन्वय करने के लिए या समाधान के लिए सुझाव देने के लिए संदर्भ दे सकता है।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>सुझावों का पालन</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>सहायक के प्रतिक्रिया को ध्यान से पढ़ें और प्रदर्शित चरणों का पालन करें। यह विशिष्ट आदेश चलाना, सिस्टम लॉग को पढ़ना या संबंधित फाइल (जैसे /var/log/sshd/error_log) में त्रुटि संकेत पढ़ना शामिल हो सकता है।</pre>
+</div>
+</div>
+</li>
+<li>
+<p><strong>अनुकूलन के लिए पुनरावर्तन</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>अगर प्रथम प्रतिक्रिया आपके प्रश्न को पूरा नहीं समाधान देती है या आपको अधिक सहायता चाहिए, तो आधारित आधार सहायक से अधिक संपर्क कर सकते हैं। सिर्फ अधिक प्रश्न टाइप करें या अनुसरणीय प्रश्न पूछें ताकि अधिक सहायता प्राप्त हो।</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_परकतक_परयग_आधरत_आधर_सहयक_क_उपयग_करक_करय_करन"><a class="anchor" href="#_परकतक_परयग_आधरत_आधर_सहयक_क_उपयग_करक_करय_करन"></a>प्राक्तिक प्रयोग: आधारित आधार सहायक का उपयोग करके कार्य करना</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>आधारित आधार सहायक का प्रयोग करने के लिए अनुभव के लिए, हम इसकी क्षमताओं का प्रदर्शन करने वाले एक प्राक्तिक प्रयोग के साथ चलेंगे:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>अक्षम सेवा का ट्रूटबुटिंग</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>अपने httpd सेवा को प्रस्तुत करने पर अक्षम होने की स्थिति में आपको आधारित आधार सहायक का उपयोग करना चाहिए और इस मुद्दे का ट्रूटबुटिंग करना चाहिए।</pre>
+</div>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>टेरमिनल पहुंच कर आधारित आधार सहायक शुरू करें:</p>
+<div class="literalblock">
+<div class="content">
+<pre>```
+$ c
+```</pre>
+</div>
+</div>
+</li>
+<li>
+<p>आपका प्रश्न बनाएं:</p>
+<div class="literalblock">
+<div class="content">
+<pre>```
+$ c "httpd service not responding का ट्रूटबुटिंग कैसे करें"
+```</pre>
+</div>
+</div>
+</li>
+<li>
+<p>सहायक के प्रतिक्रिया को पढ़ें, जिसमें शहरध के स्थिति के परिणाम के साथ-साथ लॉग समन्वय करने के लिए या समाधान के लिए संदर्भ देने के लिए संदर्भ दे सकता है।</p>
+</li>
+<li>
+<p>सुझावों का पालन करें, जैसे कि systemctl आधार स्थिति के परिणाम के परिणाम के साथ httpd को पढ़ना (systemctl status httpd) या /var/log/httpd/error_log फाइल को त्रुटि संकेतों के साथ पढ़ना।</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p><strong>अतिरिक्त सुविधाओं और संभावितताओं का अन्वेषण</strong></p>
+<div class="literalblock">
+<div class="content">
+<pre>आधारित आधार सहायक आपके RHEL अनुभव को बेहतर बनाने के लिए विभिन्न सुविधाओं और संभावितताओं का प्रदर्शन करता है। उदाहरण के लिए:</pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>सिस्टम जानकारी प्राप्त करना:</strong> आपके सिस्टम के बारे में जानकारी प्राप्त करने के लिए सहायता मांगें, जैसे कि हार्डवेयर विशेषताओं, संग्रहित पैकेज, या नेटवर्क सेटअप।</p>
+</li>
+<li>
+<p><strong>सिस्टम सेटअप सहायता:</strong> सिस्टम सेटअप को संशोधित करने के लिए सहायता मांगें, जैसे कि नेटवर्क सेटअप, फायरवॉल नियंत्रण, या उपयोगकर्ता अनुमतियों।</p>
+</li>
+<li>
+<p><strong>आदेश का संदर्भ और विकल्प:</strong> विभिन्न RHEL उपकरणों और उपयोगकर्ताओं का उपयोग करने के लिए आदेश का संदर्भ और विकल्प प्राप्त करने के लिए सहायता मांगें।</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>इन चरणों का पालन करके और आधारित आधार सहायक की क्षमताओं का अन्वेषण करके, आप कार्यों को सरल रूप से कर सकते हैं, मुद्दों का ट्रूटबुटिंग कर सकते हैं, और अपने समग्र RHEL अनुभव को बेहतर बना सकते हैं। हमेशा आधारित आधार सहायक का उपयोग के नियमों का पालन करें, जिससे आप संपर्क संस्कृति में संचारित संगठित जानकारी या व्यक्तिगत जानकारी नहीं टाइप करें।</p>
+</div>
+<div class="paragraph">
+<p>शब्दकोश:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>आईएनएफ इनफरेंस:</strong> आधारित आधार सहायक आपके प्रश्न को प्राप्त करने के लिए विज्ञान और मशीन लर्निंग (LLM) प्रदार्शक का उपयोग करता है।</p>
+</li>
+<li>
+<p><strong>मशीन लर्निंग (LLM):</strong> आधारित आधार सहायक में प्रश्नों को प्राप्त करने और प्रतिक्रिया प्रदान करने के लिए उपयोग किए जाने वाले एक AI मॉडल।</p>
+</li>
+<li>
+<p><strong>ट्रांसक्रिप्ट:</strong> आधारित आधार सहायक से आपके संपर्क के साथ होने वाले सभी प्रश्न और प्रतिक्रियाओं का पूरा रिकॉर्ड, जिसे संदर्भ में रखा जाता है।</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a></span>
+  <span class="next"><a href="exploring-additional-features-and-functionalities.html">अधिक विशेषताओं और क्षमताओं का अन्वेषण</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

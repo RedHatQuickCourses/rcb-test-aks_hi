@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RHEL संबंधित कार्यों के लिए सहायता :: RHEL Lightspeed</title>
+    <link rel="prev" href="interaction-with-the-command-line-assistant-using-plain-language.html">
+    <link rel="next" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi-1" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">घर</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">प्रयोग परिवहन</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introduction/introduction.html">परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introduction/overview-of-rhel-lightspeed.html">रीड हैट लाइटस्पीड का सारांश</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="introduction-to-the-command-line-assistant.html">रिलीज लाइटस्पीड से प्राप्त आईएल सहायक के बारे में परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="interaction-with-the-command-line-assistant-using-plain-language.html">आईटी सहायक के साथ सामान्य भाषा के साथ संवाद करना</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="assistance-with-rhel-related-tasks.html">RHEL संबंधित कार्यों के लिए सहायता</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/performing-tasks-using-the-command-line-assistant.html">आन्टोरा/AsciiDoc पाठ्यक्रम में कार्य करने के लिए आधारित आधार सहायक का उपयोग करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/exploring-additional-features-and-functionalities.html">अधिक विशेषताओं और क्षमताओं का अन्वेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">सूत्र</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="using-the-command-line-assistant-powered-by-rhel-lightspeed.html">आधारभूत लाइटस्पीड पर आधारित कमांड-लाइन सहायक का उपयोग</a></li>
+    <li><a href="assistance-with-rhel-related-tasks.html">RHEL संबंधित कार्यों के लिए सहायता</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">RHEL संबंधित कार्यों के लिए सहायता</h1>
+<div class="sect1">
+<h2 id="_rhel_सबधत_करय_क_लए_सहयत"><a class="anchor" href="#_rhel_सबधत_करय_क_लए_सहयत"></a>RHEL संबंधित कार्यों के लिए सहायता</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL Lightspeed प्रोटोकॉल कमांड लाइन सहायक एक व्यापक रेंज रेड हाट प्रोडक्ट डॉक्यूमेंट और Red Hat Knowledgebase से संपन्न जेनरेटिव AI का उपयोग करके बनाया गया है। इससे उपयोगकर्ता नेटरल लैंग्वेज वांछनों के साथ अपने RHEL प्रोटोकॉल संचालन, सेटअप, और ट्रूबलशीट का प्रबंधन करने, संचालन, और ट्रूबलशीट करने के लिए प्रभावी रूप से संबंधित कार्यों का उपयोग कर सकते हैं।</p>
+</div>
+<div class="paragraph">
+<p>RHEL संबंधित कार्यों के लिए लाइन सहायक कैसे मदद कर सकता है, नीचे दिया गया उदाहरण देखें:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>RHEL संबंधित प्रश्नों का उत्तर देना</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>उदाहरण</strong>: आप सहायक से पूछ सकते हैं, "Apache HTTP Server के स्थिति को चित्रण करने के लिए कौनसा संचार आवश्यक है?" सहायक संचार <code>systemctl status httpd</code> को उत्तर देगा।</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>ट्रूबलशीट और समाधान के लिए सहायता</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>उदाहरण</strong>: एक सेवा प्रारंभ नहीं कर रही है तो आप सहायक से पूछ सकते हैं, "MySQL सेवा क्यों प्रारंभ नहीं हो रही है?" सहायक संदर्भ और समाधान प्रदान करेगा, जैसे कि सेवा की स्थिति की परीक्षण करना, लॉग समीक्षा करना, या संचार फ़ाइलों की वैधता पर विश्लेषण करना।</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>लॉग फ़ाइलों का समझना</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>उदाहरण</strong>: आप सहायक से पूछ सकते हैं, "/var/log/messages" फ़ाइल में एक त्रुटि संदर्भ क्या है? सहायक त्रुटि संदर्भ को समझेगा और संदर्भ प्रदान करेगा, जिससे आप समस्या को समझ सकें और समाधान के लिए संदर्भ प्रदान किया जाएगा।</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>सलाह मांगना</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>उदाहरण</strong>: एक RHEL संचार कॉन्फिगरेशन के लिए सबसे अच्छा अपनाई के बारे में संदेह रखने पर, आप सहायक से पूछ सकते हैं, "सीमित संसाधनों के साथ RHEL प्रोटोकॉल का प्रभावी रूप से ऑप्टिमाइज के लिए कोई सलाह दें?" सहायक उपयोगकर्ता के पास मौजूद जानकारी के आधार पर तैयार की गई पर्याय प्रदान करेगा।</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>समस्या हल करने और नए विजनताओं को लागू करने के लिए इंटरैक्टिव प्रक्रियाओं</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>उदाहरण</strong>: आप <code>dmesg</code> से एक संचार प्रयोग कर सकते हैं और फिर लाइन सहायक का उपयोग करके उसके परिणाम को समझा सकते हैं और आगे के संदर्भ के लिए संदर्भ प्रदान कर सकते हैं। उदाहरण के तौर पर, <code>dmesg</code> प्रयोग करने के बाद, आप सहायक से पूछ सकते हैं, "kernel ring buffer output का मतलब क्या है?" सहायक उसका विश्लेषण करेगा और आगे के कदमों के लिए सलाह देगा।</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>सूचना खोजना</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>उदाहरण</strong>: एक RHEL संचार या कॉन्फिगरेशन के बारे में सूचना खोजना चाहते हैं, तो आप सहायक से पूछ सकते हैं, "semanage कॉमांड का उद्देश्य क्या है?" सहायक विस्तृत विवरण और उपयोग उदाहरण प्रदान करेगा।</p>
+</li>
+</ul>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>RHEL Lightspeed प्रोटोकॉल कमांड लाइन सहायक का उपयोग करके, उपयोगकर्ता अपने RHEL प्रबंधन कार्यों को स्वचालित कर सकते हैं, ट्रूबलशीट समय को कम कर सकते हैं, और अपने प्रोटोकॉल के बारे में मूल्यवान एक्साइट कर सकते हैं। संवाद करने के साथ संबंधित संचार समझने और सहायता प्रदान करने की क्षमता के कारण, यह सहायक RHEL प्रबंधकों के लिए सभी शैक्षिक और अनुभवी दोनों के लिए एक अत्यंत महत्वपूर्ण उपकरण है।</p>
+</div>
+<div class="paragraph">
+<p>हांड्स-ऑन लैब में आगे, आप RHEL-संबंधित कार्यों के लिए लाइन सहायक का परिचय ले सकते हैं और वेस्ट वॉर्क्स के साथ विभिन्न RHEL-संबंधित कार्यों का प्रयोग करने के लिए प्रारंभ कर सकते हैं।</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="interaction-with-the-command-line-assistant-using-plain-language.html">आईटी सहायक के साथ सामान्य भाषा के साथ संवाद करना</a></span>
+  <span class="next"><a href="../hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed/hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.html">हाइंड्स-ऑन लैब: कमांड-लाइन सहायक पर आधारित RHEL Lightspeed का उपयोग</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>
