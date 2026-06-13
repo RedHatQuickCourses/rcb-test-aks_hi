@@ -1,11 +1,11 @@
 {
-  "totalSeconds": 1156,
+  "totalSeconds": 1180,
   "pageCount": 12,
   "pages": [
     {
       "module": "ROOT",
       "page": "index.adoc",
-      "seconds": 15
+      "seconds": 16
     },
     {
       "module": "LABENV",
@@ -15,52 +15,52 @@
     {
       "module": "introduction",
       "page": "introduction.adoc",
-      "seconds": 28
+      "seconds": 25
     },
     {
       "module": "introduction",
       "page": "overview-of-rhel-lightspeed.adoc",
-      "seconds": 161
+      "seconds": 157
     },
     {
       "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "using-the-command-line-assistant-powered-by-rhel-lightspeed.adoc",
-      "seconds": 68
+      "seconds": 60
     },
     {
       "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "introduction-to-the-command-line-assistant.adoc",
-      "seconds": 176
+      "seconds": 180
     },
     {
       "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "interaction-with-the-command-line-assistant-using-plain-language.adoc",
-      "seconds": 136
+      "seconds": 141
     },
     {
       "module": "using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "assistance-with-rhel-related-tasks.adoc",
-      "seconds": 152
+      "seconds": 150
     },
     {
       "module": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed.adoc",
-      "seconds": 51
+      "seconds": 53
     },
     {
       "module": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "performing-tasks-using-the-command-line-assistant.adoc",
-      "seconds": 233
+      "seconds": 249
     },
     {
       "module": "hands-on-lab-using-the-command-line-assistant-powered-by-rhel-lightspeed",
       "page": "exploring-additional-features-and-functionalities.adoc",
-      "seconds": 129
+      "seconds": 143
     },
     {
       "module": "appendix",
       "page": "appendix.adoc",
-      "seconds": 3
+      "seconds": 2
     }
   ]
 }
