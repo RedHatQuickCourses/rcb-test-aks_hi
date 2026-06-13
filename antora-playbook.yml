@@ -1,6 +1,6 @@
 site:
   title: RHEL Lightspeed
-  start_page: rcb-test-aks_hi::index.adoc
+  start_page: rcb-test-aks_hi-1::index.adoc
 
 content:
   sources:
