@@ -1,14 +1,12 @@
 site:
-  title: RHEL Lightspeed
-  start_page: rcb-test-aks_hi-1::index.adoc
+  title:  RHEL Lightspeed
+  start_page: rcb-test-aks_hi::index.adoc
 
 content:
   sources:
   - url: ./
 
 asciidoc:
-  extensions:
-  - '@asciidoctor/tabs'
   attributes:
     page-pagination: true
 

@@ -1,7 +1,7 @@
-= सूत्र
+= परिशिष्ट
 
-FIXME: संपादन के लिए अप्रेशिव कोर्स पाठ्यक्रम के लिए...
+FIXME: परिशिष्ट के लिए सामग्री...
 
 == संसाधन
 
-link:{attachmentsdir}/{page-component-name}.pdf[कोर्स PDF डाउनलोड]
+link:{attachmentsdir}/{page-component-name}.pdf[कोर्स पीडीएफ डाउनलोड करें]

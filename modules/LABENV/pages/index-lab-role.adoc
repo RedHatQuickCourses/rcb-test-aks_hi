@@ -1,16 +1,16 @@
-= लैब परिवहन
+= लैब वातावरण
 
-== Red Hat Online Learning (ROLE) प्लेटफॉर्म पर लैब लॉन्च करने के लिए प्रणाली
+== Red Hat Online Learning (ROLE) प्लेटफ़ॉर्म पर अपनी लैब लॉन्च करने के निर्देश
 
-. **लॉग इन** करें टॉकन:xref:#ROLE-Portal-Links[ROLE प्लेटफॉर्म]
-. **खोजें** केवल पात्र प्रकार: **FIXME लैब कैटालॉग नाम**.
-. **खोजी पर सुझाव** में प्रकार के लिए **लॉन्च** बटन को निश्चित करें।
-. कोर्स पेज पर, **लैब परिवहन** टैब को खोलें।
-. लैब परिवहन पेज पर **बनाएं** बटन को खोलें ताकि लैब लॉन्च हो जाए।
-. लैब सिफारिश प्रक्रिया पूरी होने के लिए प्रतीक्षा करें।
-. लैब बनाई गई तब, पेज पर उपयोगकर्ता निवेश और निर्देशों के साथ संबंधित **SSH निजी निर्धारित गुण** के साथ संबंधित लैब पर पहुंचें।
+. **ROLE प्लेटफ़ॉर्म** (xref:#ROLE-Portal-Links[ROLE platform]) पर **लॉग इन** करें।
+. कैटलॉग प्रविष्टि के लिए **खोजें**: **FIXME Lab Catalog Name**।
+. खोज परिणामों में कैटलॉग प्रविष्टि के लिए **लॉन्च** बटन पर **क्लिक** करें।
+. कोर्स पेज पर, **लैब वातावरण** (Lab Environment) टैब पर **क्लिक** करें।
+. लैब लॉन्च करने के लिए लैब वातावरण पेज पर **बनाएँ** (Create) बटन पर क्लिक करें।
+. लैब निर्माण प्रक्रिया के पूरे होने की प्रतीक्षा करें।
+. जब लैब बन जाए, तो अपनी लैब को एक्सेस करने के लिए पेज पर मौजूद **SSH Private Key & Instructions** देखें।
 
 [[ROLE-Portal-Links]]
-=== ROLE प्लेटफॉर्म लिंक
-- रेडहट एसोसिएट: https://role.rhu.redhat.com/rol-rhu/app/[https://role.rhu.redhat.com/rol-rhu/app/,window=_blank]
-- रेडहट पार्टनर: https://rol.redhat.com/rol/app[https://rol.redhat.com/rol/app,window=_blank]
+=== ROLE पोर्टल लिंक
+- RedHat सहयोगी: https://role.rhu.redhat.com/rol-rhu/app/[https://role.rhu.redhat.com/rol-rhu/app/,window=_blank]
+- RedHat पार्टनर: https://rol.redhat.com/rol/app[https://rol.redhat.com/rol/app,window=_blank]
