@@ -1,3 +1,3 @@
-= Lab Environment
+= लैब वातावरण
 
-FIXME: Instructions for accessing the lab environment for this hands-on based training.
+FIXME: इस व्यावहारिक प्रशिक्षण के लिए लैब वातावरण तक पहुँचने के निर्देश।

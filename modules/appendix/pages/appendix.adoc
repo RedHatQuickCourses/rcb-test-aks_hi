@@ -1,7 +1,7 @@
-= Appendix
+= परिशिष्ट
 
-FIXME: Content for Appendix...
+FIXME: परिशिष्ट के लिए सामग्री...
 
-== Resources
+== संसाधन
 
-link:{attachmentsdir}/{page-component-name}.pdf[Download Course PDF]
+link:{attachmentsdir}/{page-component-name}.pdf[कोर्स PDF डाउनलोड करें]

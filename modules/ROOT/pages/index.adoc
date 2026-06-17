@@ -1,27 +1,30 @@
-= An Example Quick Course
+= RHEL Lightspeed
 :navtitle: Home
 
-== Introduction
+== परिचय
 
-Course Title: Course title FIXME
+पाठ्यक्रम का शीर्षक: RHEL Lightspeed
 
-Description:
-Course description FIXME
+विवरण:
+पाठ्यक्रम विवरण FIXME
 
-Duration: pass:[<span class="course-total-duration" aria-live="polite">…</span>]
+अवधि: FIXME घंटे
 
-== Objectives
+== इस पाठ्यक्रम में शामिल विषय
 
-On completing this course, you should be able to:
 
-* Observable, measurable objective...
-* Observable, measurable objective...
-* Observable, measurable objective...
+* RHEL Lightspeed का परिचय
 
-== Prerequisites
+* कमांड-लाइन असिस्टेंट का उपयोग करना
 
-This course assumes that you have the following prior experience:
+* हैंड्स-ऑन लैब
 
-* Course or experience...
-* Course or experience...
-* Course or experience...
+
+
+== पूर्वापेक्षाएँ
+
+यह पाठ्यक्रम मानता है कि आपके पास निम्नलिखित पूर्व अनुभव है:
+
+* पाठ्यक्रम या अनुभव...
+* पाठ्यक्रम या अनुभव...
+* पाठ्यक्रम या अनुभव...
