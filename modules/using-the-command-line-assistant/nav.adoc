@@ -1,0 +1,6 @@
+* xref:using-the-command-line-assistant.adoc[]
+** xref:interacting-with-the-command-line-assistant-using-plain-language.adoc[]
+** xref:answering-rhel-related-questions.adoc[]
+** xref:troubleshooting-system-issues.adoc[]
+** xref:deciphering-log-entries-and-system-outputs.adoc[]
+** xref:transitioning-from-complex-commands-to-natural-language-queries.adoc[]

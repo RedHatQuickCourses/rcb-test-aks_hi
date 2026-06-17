@@ -1,0 +1,4 @@
+* xref:introducing-rhel-lightspeed.adoc[]
+** xref:overview-of-rhel-lightspeed-intelligent-functionalities.adoc[]
+** xref:benefits-for-system-administrators-of-all-experience-levels.adoc[]
+** xref:accessibility-and-ease-of-management-in-rhel-environments.adoc[]

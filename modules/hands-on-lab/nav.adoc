@@ -1,0 +1,4 @@
+* xref:hands-on-lab.adoc[]
+** xref:configuring-the-rhel-lightspeed-command-line-assistant.adoc[]
+** xref:executing-system-tasks-using-natural-language-prompts.adoc[]
+** xref:analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.adoc[]
