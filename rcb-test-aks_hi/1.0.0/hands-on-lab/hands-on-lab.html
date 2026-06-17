@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Untitled :: RHEL Lightspeed</title>
+    <link rel="prev" href="../using-the-command-line-assistant/transitioning-from-complex-commands-to-natural-language-queries.html">
+    <link rel="next" href="configuring-the-rhel-lightspeed-command-line-assistant.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">लैब वातावरण</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introducing-rhel-lightspeed/introducing-rhel-lightspeed.html">RHEL Lightspeed का परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/overview-of-rhel-lightspeed-intelligent-functionalities.html">RHEL Lightspeed का परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/benefits-for-system-administrators-of-all-experience-levels.html">सभी अनुभव स्तरों के सिस्टम प्रशासकों के लिए लाभ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/accessibility-and-ease-of-management-in-rhel-environments.html">RHEL परिवेशों में अभिगम्यता और प्रबंधन में आसानी</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-the-command-line-assistant/using-the-command-line-assistant.html">कमांड-लाइन असिस्टेंट का उपयोग करना</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/interacting-with-the-command-line-assistant-using-plain-language.html">साधारण भाषा का उपयोग करके कमांड-लाइन असिस्टेंट के साथ इंटरैक्ट करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/answering-rhel-related-questions.html">RHEL-संबंधित प्रश्नों के उत्तर देना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/troubleshooting-system-issues.html">Troubleshooting system issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/deciphering-log-entries-and-system-outputs.html">लॉग प्रविष्टियों (log entries) और सिस्टम आउटपुट को समझना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/transitioning-from-complex-commands-to-natural-language-queries.html">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="hands-on-lab.html">hands-on-lab.adoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configuring-the-rhel-lightspeed-command-line-assistant.html">RHEL Lightspeed कमांड-लाइन असिस्टेंट को कॉन्फ़िगर करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="executing-system-tasks-using-natural-language-prompts.html">नेचुरल लैंग्वेज प्रॉम्प्ट का उपयोग करके सिस्टम कार्य निष्पादित करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.html">RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">परिशिष्ट</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="hands-on-lab.html">hands-on-lab.adoc</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<div class="sect1">
+<h2 id="_hands_on_lab"><a class="anchor" href="#_hands_on_lab"></a>Hands-on Lab</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>यह हैंड्स-ऑन लैब RHEL Lightspeed कमांड-लाइन असिस्टेंट में महारत हासिल करने के लिए एक व्यावहारिक वातावरण प्रदान करती है। प्रतिभागी निम्नलिखित अभ्यासों में संलग्न होंगे:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Configuration:</strong> RHEL वातावरण के भीतर तत्काल उपयोग के लिए कमांड-लाइन असिस्टेंट को सेटअप करना।</p>
+</li>
+<li>
+<p><strong>Natural Language Execution:</strong> सिस्टम प्रशासन कार्यों के लिए जटिल कमांड सिंटैक्स से सहज प्राकृतिक भाषा प्रॉम्प्ट (natural language prompts) में परिवर्तन का अभ्यास करना।</p>
+</li>
+<li>
+<p><strong>Troubleshooting Scenarios:</strong> सिस्टम लॉग्स की व्याख्या करने और सामान्य समस्याओं को प्रभावी ढंग से हल करने के लिए AI-संचालित विश्लेषण का उपयोग करना।</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="../using-the-command-line-assistant/transitioning-from-complex-commands-to-natural-language-queries.html">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</a></span>
+  <span class="next"><a href="configuring-the-rhel-lightspeed-command-line-assistant.html">RHEL Lightspeed कमांड-लाइन असिस्टेंट को कॉन्फ़िगर करना</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

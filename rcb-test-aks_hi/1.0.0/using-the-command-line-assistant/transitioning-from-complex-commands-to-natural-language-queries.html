@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन :: RHEL Lightspeed</title>
+    <link rel="prev" href="deciphering-log-entries-and-system-outputs.html">
+    <link rel="next" href="../hands-on-lab/hands-on-lab.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">लैब वातावरण</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introducing-rhel-lightspeed/introducing-rhel-lightspeed.html">RHEL Lightspeed का परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/overview-of-rhel-lightspeed-intelligent-functionalities.html">RHEL Lightspeed का परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/benefits-for-system-administrators-of-all-experience-levels.html">सभी अनुभव स्तरों के सिस्टम प्रशासकों के लिए लाभ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/accessibility-and-ease-of-management-in-rhel-environments.html">RHEL परिवेशों में अभिगम्यता और प्रबंधन में आसानी</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="using-the-command-line-assistant.html">कमांड-लाइन असिस्टेंट का उपयोग करना</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="interacting-with-the-command-line-assistant-using-plain-language.html">साधारण भाषा का उपयोग करके कमांड-लाइन असिस्टेंट के साथ इंटरैक्ट करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="answering-rhel-related-questions.html">RHEL-संबंधित प्रश्नों के उत्तर देना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="troubleshooting-system-issues.html">Troubleshooting system issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="deciphering-log-entries-and-system-outputs.html">लॉग प्रविष्टियों (log entries) और सिस्टम आउटपुट को समझना</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="transitioning-from-complex-commands-to-natural-language-queries.html">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../hands-on-lab/hands-on-lab.html">hands-on-lab.adoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab/configuring-the-rhel-lightspeed-command-line-assistant.html">RHEL Lightspeed कमांड-लाइन असिस्टेंट को कॉन्फ़िगर करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab/executing-system-tasks-using-natural-language-prompts.html">नेचुरल लैंग्वेज प्रॉम्प्ट का उपयोग करके सिस्टम कार्य निष्पादित करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab/analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.html">RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">परिशिष्ट</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="using-the-command-line-assistant.html">कमांड-लाइन असिस्टेंट का उपयोग करना</a></li>
+    <li><a href="transitioning-from-complex-commands-to-natural-language-queries.html">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL Lightspeed कमांड-लाइन सहायक, Linux कमांड-लाइन सिंटैक्स की पारंपरिक, उच्च-सटीक दुनिया और मानवीय भाषा की सहज, लचीली प्रकृति के बीच एक सेतु के रूप में कार्य करता है। जनरेटिव AI का लाभ उठाकर, आप अपना ध्यान जटिल फ्लैग संयोजनों और सिंटैक्स संरचनाओं को याद रखने से हटाकर अपने सिस्टम प्रबंधन कार्यों के <strong>उद्देश्य</strong> (intent) को परिभाषित करने पर केंद्रित कर सकते हैं।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_बदलव_सटकस_स_उददशय_intent_तक"><a class="anchor" href="#_बदलव_सटकस_स_उददशय_intent_तक"></a>बदलाव: सिंटैक्स से उद्देश्य (intent) तक</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>पारंपरिक RHEL प्रशासन के लिए सही तर्क (arguments), फ्लैग और पाइप के साथ कमांड बनाने के लिए महत्वपूर्ण संज्ञानात्मक भार (cognitive load) की आवश्यकता होती है। प्राकृतिक भाषा क्वेरी की ओर बढ़ने से आप अधिक संवादात्मक तरीके से सिस्टम के साथ इंटरैक्ट कर सकते हैं।</p>
+</div>
+<div class="paragraph">
+<p>मल्टी-स्टेज कमांड के लिए सटीक सिंटैक्स को याद रखने के बजाय, आप इच्छित स्थिति या उस समस्या का वर्णन करते हैं जिसका आप सामना कर रहे हैं। RHEL Lightspeed सहायक इस अनुरोध को इस प्रकार प्रोसेस करता है:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>उद्देश्य को पार्स करना (Parsing Intent):</strong> मुख्य कार्य की पहचान करना (उदाहरण के लिए, सर्विस स्टेटस की जाँच करना, लॉग को फ़िल्टर करना, या अनुमतियाँ समायोजित करना)।</p>
+</li>
+<li>
+<p><strong>संदर्भ मानचित्रण (Contextual Mapping):</strong> आपके उद्देश्य को क्रियाशील कमांड में अनुवादित करने के लिए Red Hat उत्पाद दस्तावेज़ और Red Hat Knowledgebase का उपयोग करना।</p>
+</li>
+<li>
+<p><strong>सिंटैक्स सटीकता (Syntactic Precision):</strong> RHEL के वर्तमान संस्करण के लिए आवश्यक सटीक, मान्य कमांड संरचना तैयार करना।</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_यह_कस_कम_करत_ह_इनपटआउटपट_फल"><a class="anchor" href="#_यह_कस_कम_करत_ह_इनपटआउटपट_फल"></a>यह कैसे काम करता है: इनपुट/आउटपुट फ़्लो</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>जब आप जटिल कमांड टाइप करने से सहायक का उपयोग करने की ओर बढ़ते हैं, तो आप सटीकता सुनिश्चित करने के लिए डिज़ाइन किए गए एक बैकएंड पाइपलाइन के साथ इंटरैक्ट कर रहे होते हैं:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><strong>इनपुट:</strong> आप अपना प्रश्न या कार्य प्राकृतिक भाषा में दर्ज करते हैं।</p>
+</li>
+<li>
+<p><strong>प्रोसेसिंग:</strong> कमांड-लाइन सहायक आपकी क्वेरी के लिए विशिष्ट प्रासंगिक तकनीकी ज्ञान खोजता है।</p>
+</li>
+<li>
+<p><strong>अनुमान (Inference):</strong> आपकी क्वेरी, पुनर्प्राप्त ज्ञान और सिस्टम निर्देशों के साथ, अनुमान (inference) के लिए लार्ज लैंग्वेज मॉडल (LLM) को भेजी जाती है।</p>
+</li>
+<li>
+<p><strong>आउटपुट:</strong> सहायक एक स्पष्ट, क्रियाशील प्रतिक्रिया प्रदान करता है, जिसमें वह सटीक कमांड शामिल हो सकती है जिसे आपको चलाने की आवश्यकता है।</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>डेटा गोपनीयता सूचना:</strong> प्राकृतिक भाषा क्वेरी की ओर बढ़ते समय, सुनिश्चित करें कि आप अपने इनपुट में व्यक्तिगत जानकारी या संवेदनशील कंपनी डेटा शामिल न करें। कमांड-लाइन सहायक व्यक्तिगत जानकारी को प्रोसेस करने के लिए अभिप्रेत नहीं है।</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_वयवहरक_उदहरण_सटकस_क_सरल_बनन"><a class="anchor" href="#_वयवहरक_उदहरण_सटकस_क_सरल_बनन"></a>व्यावहारिक उदाहरण: सिंटैक्स को सरल बनाना</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>एक ऐसे परिदृश्य पर विचार करें जहाँ आपको किसी विशिष्ट सर्विस से संबंधित त्रुटियों को खोजने के लिए सिस्टम लॉग का विश्लेषण करने की आवश्यकता है।</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>पारंपरिक विधि:</strong> आपको <code>journalctl</code> के लिए सही सिंटैक्स याद रखना होगा, जिसमें प्राथमिकता और यूनिट के आधार पर फ़िल्टर करने के लिए उपयुक्त फ्लैग शामिल हैं, जैसे:
+<code>journalctl -u httpd.service --since "1 hour ago" --priority=err</code></p>
+</li>
+<li>
+<p><strong>प्राकृतिक भाषा क्वेरी:</strong> आप बस सहायक से पूछ सकते हैं:
+<strong>"Show me the error logs for the Apache web server from the last hour."</strong></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>सहायक इस उद्देश्य का अनुवाद करता है, प्रासंगिक RHEL दस्तावेज़ का संदर्भ लेता है, और आउटपुट का क्या अर्थ है, इसकी व्याख्या के साथ सही कमांड प्रदान करता है। यह परिवर्तन न केवल दक्षता बढ़ाता है, बल्कि मैन्युअल रूप से जटिल कमांड स्ट्रिंग बनाते समय होने वाली सिंटैक्स त्रुटियों की संभावना को भी कम करता है।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_परकतक_भष_क_मधयम_स_समसय_नवरण_troubleshooting"><a class="anchor" href="#_परकतक_भष_क_मधयम_स_समसय_नवरण_troubleshooting"></a>प्राकृतिक भाषा के माध्यम से समस्या निवारण (Troubleshooting)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>कार्य निष्पादित करने के अलावा, आप लॉग फ़ाइल आउटपुट को रीडायरेक्ट करके समस्या निवारण के लिए प्राकृतिक भाषा का उपयोग कर सकते हैं। यदि आपके पास कोई लॉग फ़ाइल है जिसमें एक गुप्त त्रुटि है, तो आपको इसे मैन्युअल रूप से पार्स करने या अलग-अलग पैटर्न खोजने की आवश्यकता नहीं है। आप लॉग सामग्री को सीधे कमांड-लाइन सहायक को रीडायरेक्ट कर सकते हैं, जिससे आप पूछ सकते हैं: <strong>"Explain what this error means and how I should resolve it."</strong></p>
+</div>
+<div class="paragraph">
+<p>यह दृष्टिकोण समस्या निवारण प्रक्रिया को एक मैन्युअल, समय लेने वाले शोध कार्य से बदलकर एक संवादात्मक, विशेषज्ञ-निर्देशित बातचीत में बदल देता है।</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="deciphering-log-entries-and-system-outputs.html">लॉग प्रविष्टियों (log entries) और सिस्टम आउटपुट को समझना</a></span>
+  <span class="next"><a href="../hands-on-lab/hands-on-lab.html">hands-on-lab.adoc</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

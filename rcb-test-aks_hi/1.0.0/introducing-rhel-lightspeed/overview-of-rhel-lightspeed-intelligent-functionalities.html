@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RHEL Lightspeed का परिचय :: RHEL Lightspeed</title>
+    <link rel="prev" href="introducing-rhel-lightspeed.html">
+    <link rel="next" href="benefits-for-system-administrators-of-all-experience-levels.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">लैब वातावरण</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="introducing-rhel-lightspeed.html">RHEL Lightspeed का परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="overview-of-rhel-lightspeed-intelligent-functionalities.html">RHEL Lightspeed का परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="benefits-for-system-administrators-of-all-experience-levels.html">सभी अनुभव स्तरों के सिस्टम प्रशासकों के लिए लाभ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="accessibility-and-ease-of-management-in-rhel-environments.html">RHEL परिवेशों में अभिगम्यता और प्रबंधन में आसानी</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-the-command-line-assistant/using-the-command-line-assistant.html">कमांड-लाइन असिस्टेंट का उपयोग करना</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/interacting-with-the-command-line-assistant-using-plain-language.html">साधारण भाषा का उपयोग करके कमांड-लाइन असिस्टेंट के साथ इंटरैक्ट करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/answering-rhel-related-questions.html">RHEL-संबंधित प्रश्नों के उत्तर देना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/troubleshooting-system-issues.html">Troubleshooting system issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/deciphering-log-entries-and-system-outputs.html">लॉग प्रविष्टियों (log entries) और सिस्टम आउटपुट को समझना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/transitioning-from-complex-commands-to-natural-language-queries.html">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../hands-on-lab/hands-on-lab.html">hands-on-lab.adoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab/configuring-the-rhel-lightspeed-command-line-assistant.html">RHEL Lightspeed कमांड-लाइन असिस्टेंट को कॉन्फ़िगर करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab/executing-system-tasks-using-natural-language-prompts.html">नेचुरल लैंग्वेज प्रॉम्प्ट का उपयोग करके सिस्टम कार्य निष्पादित करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../hands-on-lab/analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.html">RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">परिशिष्ट</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="introducing-rhel-lightspeed.html">RHEL Lightspeed का परिचय</a></li>
+    <li><a href="overview-of-rhel-lightspeed-intelligent-functionalities.html">RHEL Lightspeed का परिचय</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">RHEL Lightspeed का परिचय</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL Lightspeed एक बुद्धिमान, AI-संचालित उपकरण है जिसे Red Hat Enterprise Linux (RHEL) इकोसिस्टम में एकीकृत किया गया है। इसे सिस्टम प्रशासकों के लिए एक 'फोर्स मल्टीप्लायर' (force multiplier) के रूप में कार्य करने के लिए डिज़ाइन किया गया है, जो जटिल मैन्युअल संचालन और प्राकृतिक भाषा (natural language) इंटरैक्शन के बीच की दूरी को कम करता है।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_बदधमन_करयकषमतए"><a class="anchor" href="#_बदधमन_करयकषमतए"></a>बुद्धिमान कार्यक्षमताएं</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>अपने मूल में, RHEL Lightspeed रेड हैट के तकनीकी दस्तावेज़ीकरण के विशाल भंडार के साथ गहरे एकीकरण का लाभ उठाता है, जिसमें Knowledge Centered Service (KCS) लेख और आधिकारिक उत्पाद दस्तावेज़ीकरण शामिल हैं। इसकी मुख्य बुद्धिमान कार्यक्षमताओं में शामिल हैं:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>नेचुरल लैंग्वेज प्रोसेसिंग (NLP):</strong> RHEL Lightspeed सरल भाषा में की गई पूछताछ को क्रियाशील तकनीकी कार्यों या स्पष्टीकरणों में अनुवादित करता है, जिससे हर ऑपरेशन के लिए जटिल कमांड-लाइन सिंटैक्स को याद रखने की आवश्यकता समाप्त हो जाती है।</p>
+</li>
+<li>
+<p><strong>संदर्भ-जागरूक समस्या निवारण (Context-Aware Troubleshooting):</strong> यह सहायक सिस्टम आउटपुट, त्रुटि संदेशों और लॉग प्रविष्टियों का विश्लेषण करके मूल-कारण विश्लेषण (root-cause analysis) और समाधान के सुझाव प्रदान कर सकता है, जिससे पारंपरिक समस्या निवारण वर्कफ़्लो में लगने वाला समय प्रभावी रूप से कम हो जाता है।</p>
+</li>
+<li>
+<p><strong>ज्ञान संश्लेषण (Knowledge Synthesis):</strong> सत्यापित रेड हैट संसाधनों से जानकारी लेकर, यह सहायक ऐसा मार्गदर्शन प्रदान करता है जो उद्योग के सर्वोत्तम अभ्यासों (best practices) के अनुरूप होता है, यह सुनिश्चित करते हुए कि सिफारिशें सटीक और सुरक्षित दोनों हैं।</p>
+</li>
+<li>
+<p><strong>इंटरैक्टिव वर्कफ़्लो सहायता:</strong> स्थिर सवालों के जवाब देने के अलावा, RHEL Lightspeed पुनरावृत्त समस्या समाधान (iterative problem-solving) का समर्थन करता है। आप समस्याओं का निदान करने, नई सुविधाएँ लागू करने या RHEL कॉन्फ़िगरेशन विकल्पों का पता लगाने के लिए बहु-चरणीय बातचीत में शामिल हो सकते हैं।</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ससटम_परशसक_क_लए_लभ"><a class="anchor" href="#_ससटम_परशसक_क_लए_लभ"></a>सिस्टम प्रशासकों के लिए लाभ</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL Lightspeed को समावेशी होने के लिए इंजीनियर किया गया है, जो एक प्रशासक के रूप में आपके अनुभव के स्तर की परवाह किए बिना विशिष्ट मूल्य प्रदान करता है:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">उपयोगकर्ता प्रोफ़ाइल</th>
+<th class="tableblock halign-left valign-top">लाभ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>कम अनुभवी उपयोगकर्ता</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">यह उन कार्यों के लिए निर्देशित, चरण-दर-चरण निर्देश प्रदान करके प्रवेश बाधा को कम करता है जिनके लिए अन्यथा मैन्युअल मैन पेजों (man pages) या जटिल कमांड फ्लैग्स के गहन ज्ञान की आवश्यकता हो सकती है।</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>अनुभवी उपयोगकर्ता</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">यह विशिष्ट KCS जानकारी, समस्या निवारण तर्क और जटिल सिंटैक्स तक त्वरित पहुँच प्रदान करके परिचालन गति को बढ़ाता है, जिससे नियमित और दुर्लभ समस्याओं का तेजी से समाधान संभव होता है।</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_सलभत_और_परबधन"><a class="anchor" href="#_सलभत_और_परबधन"></a>सुलभता और प्रबंधन</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL Lightspeed का कमांड-लाइन इंटरफ़ेस में एकीकरण उन्नत बुद्धिमत्ता को सीधे प्रशासक के कार्यक्षेत्र में सुलभ बनाता है। यह वास्तुशिल्प निर्णय सुनिश्चित करता है कि:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>संदर्भ स्विचिंग में कमी:</strong> प्रशासक बाहरी वेब दस्तावेज़ीकरण खोजने के लिए सिस्टम से बाहर निकले बिना, अपने टर्मिनल वातावरण में रहते हुए विशेषज्ञ-स्तरीय मार्गदर्शन प्राप्त कर सकते हैं।</p>
+</li>
+<li>
+<p><strong>मानकीकृत प्रबंधन:</strong> चूंकि यह सहायक सुसंगत, आधिकारिक रेड हैट डेटा से जानकारी लेता है, यह विविध RHEL वातावरणों में मानकीकरण को बढ़ावा देता है, जिससे टीमों को अपरिचित RHEL सुविधाओं के साथ काम करते समय भी अनुपालन और सर्वोत्तम-अभ्यास कॉन्फ़िगरेशन बनाए रखने में मदद मिलती है।</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>RHEL कमांड-लाइन इंटरफ़ेस को एक स्थिर वातावरण से एक इंटरैक्टिव, बुद्धिमान भागीदार में बदलकर, RHEL Lightspeed प्रशासकों को अधिक आत्मविश्वास और दक्षता के साथ अपने बुनियादी ढांचे (infrastructure) का प्रबंधन, रखरखाव और विस्तार करने के लिए सशक्त बनाता है।</p>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="introducing-rhel-lightspeed.html">RHEL Lightspeed का परिचय</a></span>
+  <span class="next"><a href="benefits-for-system-administrators-of-all-experience-levels.html">सभी अनुभव स्तरों के सिस्टम प्रशासकों के लिए लाभ</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>

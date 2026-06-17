@@ -1,11 +1,11 @@
 {
-  "totalSeconds": 428,
-  "pageCount": 15,
+  "totalSeconds": 1648,
+  "pageCount": 17,
   "pages": [
     {
       "module": "ROOT",
       "page": "index.adoc",
-      "seconds": 15
+      "seconds": 13
     },
     {
       "module": "LABENV",
@@ -13,69 +13,79 @@
       "seconds": 4
     },
     {
-      "module": "chapter1",
-      "page": "index.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter1",
-      "page": "section1.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter1",
-      "page": "section2.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter1",
-      "page": "section3.adoc",
-      "seconds": 9
-    },
-    {
-      "module": "chapter1",
-      "page": "tabs-demo.adoc",
-      "seconds": 20
-    },
-    {
-      "module": "chapter1",
-      "page": "collapsible-demo.adoc",
+      "module": "introducing-rhel-lightspeed",
+      "page": "introducing-rhel-lightspeed.adoc",
       "seconds": 36
     },
     {
-      "module": "chapter1",
-      "page": "images.adoc",
-      "seconds": 271
+      "module": "introducing-rhel-lightspeed",
+      "page": "overview-of-rhel-lightspeed-intelligent-functionalities.adoc",
+      "seconds": 155
     },
     {
-      "module": "chapter2",
-      "page": "index.adoc",
-      "seconds": 9
+      "module": "introducing-rhel-lightspeed",
+      "page": "benefits-for-system-administrators-of-all-experience-levels.adoc",
+      "seconds": 146
     },
     {
-      "module": "chapter2",
-      "page": "section1.adoc",
-      "seconds": 9
+      "module": "introducing-rhel-lightspeed",
+      "page": "accessibility-and-ease-of-management-in-rhel-environments.adoc",
+      "seconds": 131
     },
     {
-      "module": "chapter3",
-      "page": "index.adoc",
-      "seconds": 9
+      "module": "using-the-command-line-assistant",
+      "page": "using-the-command-line-assistant.adoc",
+      "seconds": 45
     },
     {
-      "module": "chapter3",
-      "page": "section1.adoc",
-      "seconds": 9
+      "module": "using-the-command-line-assistant",
+      "page": "interacting-with-the-command-line-assistant-using-plain-language.adoc",
+      "seconds": 124
     },
     {
-      "module": "chapter3",
-      "page": "section2.adoc",
-      "seconds": 9
+      "module": "using-the-command-line-assistant",
+      "page": "answering-rhel-related-questions.adoc",
+      "seconds": 111
+    },
+    {
+      "module": "using-the-command-line-assistant",
+      "page": "troubleshooting-system-issues.adoc",
+      "seconds": 138
+    },
+    {
+      "module": "using-the-command-line-assistant",
+      "page": "deciphering-log-entries-and-system-outputs.adoc",
+      "seconds": 158
+    },
+    {
+      "module": "using-the-command-line-assistant",
+      "page": "transitioning-from-complex-commands-to-natural-language-queries.adoc",
+      "seconds": 171
+    },
+    {
+      "module": "hands-on-lab",
+      "page": "hands-on-lab.adoc",
+      "seconds": 26
+    },
+    {
+      "module": "hands-on-lab",
+      "page": "configuring-the-rhel-lightspeed-command-line-assistant.adoc",
+      "seconds": 107
+    },
+    {
+      "module": "hands-on-lab",
+      "page": "executing-system-tasks-using-natural-language-prompts.adoc",
+      "seconds": 146
+    },
+    {
+      "module": "hands-on-lab",
+      "page": "analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.adoc",
+      "seconds": 135
     },
     {
       "module": "appendix",
       "page": "appendix.adoc",
-      "seconds": 1
+      "seconds": 2
     }
   ]
 }

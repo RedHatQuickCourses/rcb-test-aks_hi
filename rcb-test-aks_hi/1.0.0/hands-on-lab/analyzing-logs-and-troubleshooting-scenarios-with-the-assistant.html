@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण :: RHEL Lightspeed</title>
+    <link rel="prev" href="executing-system-tasks-using-natural-language-prompts.html">
+    <link rel="next" href="../appendix/appendix.html">
+    <meta name="generator" content="Antora 3.2.0-alpha.12">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/tabs.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/collapsible.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/reading-time.css">
+    <link rel="stylesheet" href="../../../_/css/vendor/audio-transcript.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://www.redhat.com" target="_blank"><img src="../../../_/img/redhat-logo.png" height="40px" alt="Red Hat"></a>
+      <a class="navbar-item" style="font-size: 24px; color: white" href="../../..">RHEL Lightspeed</a>
+      <button class="navbar-burger" data-target="topbar-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item" href="https://github.com/RedHatQuickCourses/REPLACEREPONAME/issues" target="_blank">Report Issues</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="rcb-test-aks_hi" data-version="1.0.0">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">RHEL Lightspeed</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Home</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../LABENV/index.html">लैब वातावरण</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../introducing-rhel-lightspeed/introducing-rhel-lightspeed.html">RHEL Lightspeed का परिचय</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/overview-of-rhel-lightspeed-intelligent-functionalities.html">RHEL Lightspeed का परिचय</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/benefits-for-system-administrators-of-all-experience-levels.html">सभी अनुभव स्तरों के सिस्टम प्रशासकों के लिए लाभ</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../introducing-rhel-lightspeed/accessibility-and-ease-of-management-in-rhel-environments.html">RHEL परिवेशों में अभिगम्यता और प्रबंधन में आसानी</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../using-the-command-line-assistant/using-the-command-line-assistant.html">कमांड-लाइन असिस्टेंट का उपयोग करना</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/interacting-with-the-command-line-assistant-using-plain-language.html">साधारण भाषा का उपयोग करके कमांड-लाइन असिस्टेंट के साथ इंटरैक्ट करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/answering-rhel-related-questions.html">RHEL-संबंधित प्रश्नों के उत्तर देना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/troubleshooting-system-issues.html">Troubleshooting system issues</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/deciphering-log-entries-and-system-outputs.html">लॉग प्रविष्टियों (log entries) और सिस्टम आउटपुट को समझना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../using-the-command-line-assistant/transitioning-from-complex-commands-to-natural-language-queries.html">जटिल कमांड से प्राकृतिक भाषा क्वेरी (natural language queries) में परिवर्तन</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="hands-on-lab.html">hands-on-lab.adoc</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configuring-the-rhel-lightspeed-command-line-assistant.html">RHEL Lightspeed कमांड-लाइन असिस्टेंट को कॉन्फ़िगर करना</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="executing-system-tasks-using-natural-language-prompts.html">नेचुरल लैंग्वेज प्रॉम्प्ट का उपयोग करके सिस्टम कार्य निष्पादित करना</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.html">RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../appendix/appendix.html">परिशिष्ट</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">RHEL Lightspeed</span>
+    <span class="version">1.0.0</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">RHEL Lightspeed</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1.0.0</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">RHEL Lightspeed</a></li>
+    <li><a href="hands-on-lab.html">hands-on-lab.adoc</a></li>
+    <li><a href="analyzing-logs-and-troubleshooting-scenarios-with-the-assistant.html">RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण</a></li>
+  </ul>
+</nav>
+</div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">RHEL Lightspeed के साथ लॉग और ट्रबलशूटिंग परिदृश्यों का विश्लेषण</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>RHEL Lightspeed की सबसे शक्तिशाली विशेषताओं में से एक जटिल सिस्टम आउटपुट और लॉग की व्याख्या करने की इसकी क्षमता है। त्रुटि संदेशों और कॉन्फ़िगरेशन फ़ाइलों के प्रारंभिक विश्लेषण को AI-संचालित कमांड-लाइन असिस्टेंट पर स्थानांतरित करके, आप सिस्टम समस्याओं के मूल कारण की पहचान करने में लगने वाले समय को काफी कम कर सकते हैं।</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_ससटम_लग_क_वशलषण"><a class="anchor" href="#_ससटम_लग_क_वशलषण"></a>सिस्टम लॉग का विश्लेषण</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>सिस्टम लॉग में अक्सर सघन, रहस्यमयी जानकारी होती है। RHEL Lightspeed लॉग आउटपुट को सीधे असिस्टेंट में रीडायरेक्ट करने की अनुमति देकर इसे सरल बनाता है, जिससे तुरंत सरल भाषा में स्पष्टीकरण प्राप्त होता है।</p>
+</div>
+<div class="paragraph">
+<p>लॉग फ़ाइल का विश्लेषण करने के लिए, आप फ़ाइल की सामग्री को <code>c</code> कमांड में पाइप कर सकते हैं। यह असिस्टेंट को रॉ टेक्स्ट को प्रोसेस करने और संदर्भ, संभावित कारणों तथा सुझाई गई सुधार प्रक्रियाओं को प्रदान करने में सक्षम बनाता है।</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>कमांड-लाइन असिस्टेंट को लॉग फ़ाइलें पाइप करने से पहले यह सुनिश्चित करें कि आपके पास उन्हें पढ़ने के लिए उचित अनुमतियाँ हैं।</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_टरबलशटग_परदशय"><a class="anchor" href="#_टरबलशटग_परदशय"></a>ट्रबलशूटिंग परिदृश्य</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>लॉग की व्याख्या करने के अलावा, आप इंटरैक्टिव ट्रबलशूटिंग सत्रों के माध्यम से मार्गदर्शन के लिए असिस्टेंट का उपयोग कर सकते हैं। चाहे आप सर्विस विफलता, नेटवर्क कनेक्टिविटी समस्याओं, या कर्नल कॉन्फ़िगरेशन से निपट रहे हों, आप प्राकृतिक भाषा का उपयोग करके असिस्टेंट के साथ जुड़ सकते हैं।</p>
+</div>
+<div class="sect2">
+<h3 id="_परभव_कवर_पटरन"><a class="anchor" href="#_परभव_कवर_पटरन"></a>प्रभावी क्वेरी पैटर्न</h3>
+<div class="paragraph">
+<p>असिस्टेंट से सबसे प्रासंगिक मार्गदर्शन प्राप्त करने के लिए, अपनी क्वेरी को इस प्रकार तैयार करें:
+* <strong>लक्षण (Symptom):</strong> बताएं कि क्या विफल हो रहा है (उदाहरण के लिए, "SSSD fails to start")।
+* <strong>संदर्भ (Context):</strong> प्रासंगिक परिवेश विवरण या हाल के परिवर्तनों को शामिल करें।
+* <strong>लक्ष्य (Goal):</strong> निर्दिष्ट करें कि आप क्या हासिल करने का प्रयास कर रहे हैं (उदाहरण के लिए, "I need to find the configuration error")।</p>
+</div>
+<div class="paragraph">
+<p>उदाहरण के लिए, दस्तावेज़ीकरण में खोजने के बजाय, आप पूछ सकते हैं:
+<code>$ c "I am failing to start the sssd process, analyze the last 50 lines of /var/log/sssd/sssd.log and suggest a fix."</code></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_हडस_ऑन_लब_rhel_lightspeed_क_सथ_टरबलशटग"><a class="anchor" href="#_हडस_ऑन_लब_rhel_lightspeed_क_सथ_टरबलशटग"></a>हैंड्स-ऑन लैब: RHEL Lightspeed के साथ ट्रबलशूटिंग</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>इस लैब में, आप लॉग डेटा को RHEL Lightspeed असिस्टेंट में फीड करके एक सामान्य ट्रबलशूटिंग परिदृश्य का अनुकरण करेंगे।</p>
+</div>
+<div class="sect2">
+<h3 id="_परवपकषए"><a class="anchor" href="#_परवपकषए"></a>पूर्वापेक्षाएँ</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>RHEL पर चलने वाला एक सिस्टम जिसमें RHEL Lightspeed कमांड-लाइन असिस्टेंट कॉन्फ़िगर किया गया हो।</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_चरण_1_लग_आउटपट_क_रडयरकट_करन"><a class="anchor" href="#_चरण_1_लग_आउटपट_क_रडयरकट_करन"></a>चरण 1: लॉग आउटपुट को रीडायरेक्ट करना</h3>
+<div class="paragraph">
+<p>इस चरण में, हम त्रुटि की पहचान करने के लिए असिस्टेंट को लॉग डेटा प्रदान करेंगे।</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>अपना टर्मिनल खोलें।</p>
+</li>
+<li>
+<p>मान लें कि आपको अपनी <code>sssd</code> सर्विस में कोई समस्या होने का संदेह है। लॉग आउटपुट को असिस्टेंट में रीडायरेक्ट करें:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ cat /var/log/sssd/sssd.log | c "Analyze this log for errors and explain why the service failed to start"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>असिस्टेंट के आउटपुट की समीक्षा करें। यह प्रदान किए गए लॉग स्निपेट के भीतर विशिष्ट त्रुटि कोड या कॉन्फ़िगरेशन सिंटैक्स समस्या की पहचान करेगा।</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_चरण_2_इटरकटव_टरबलशटग"><a class="anchor" href="#_चरण_2_इटरकटव_टरबलशटग"></a>चरण 2: इंटरैक्टिव ट्रबलशूटिंग</h3>
+<div class="paragraph">
+<p>एक बार जब असिस्टेंट समस्या की पहचान कर लेता है, तो अपने ट्रबलशूटिंग चरणों को बेहतर बनाने के लिए इसका उपयोग करें।</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>चरण 1 से प्राप्त आउटपुट के आधार पर, असिस्टेंट से सुधार के लिए कहें:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ c "The log indicates a syntax error in /etc/sssd/sssd.conf. How do I validate this file for errors?"</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>कॉन्फ़िगरेशन को सत्यापित करने के लिए असिस्टेंट द्वारा प्रदान की गई सुझाई गई कमांड निष्पादित करें।</p>
+</li>
+<li>
+<p>यदि कमांड कोई और त्रुटि लौटाती है, तो उस विशिष्ट त्रुटि को वापस असिस्टेंट में पाइप करें:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ &lt;command_that_failed&gt; 2&gt;&amp;1 | c "Explain this error and provide the correct syntax"</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_चरण_3_सफई_और_सतयपन"><a class="anchor" href="#_चरण_3_सफई_और_सतयपन"></a>चरण 3: सफाई और सत्यापन</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>एक बार कॉन्फ़िगरेशन ठीक हो जाने के बाद, असिस्टेंट के सुझाव के अनुसार सर्विस को पुनरारंभ करें।</p>
+</li>
+<li>
+<p>पुष्टि करें कि सर्विस चल रही है:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">$ systemctl status sssd</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>असिस्टेंट को अपने वर्कफ़्लो में एकीकृत करके, आप मैन्युअल रूप से फ़ाइलों को पार्स करने से आगे बढ़कर निर्देशित, बुद्धिमान समाधान की ओर बढ़ते हैं।</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="executing-system-tasks-using-natural-language-prompts.html">नेचुरल लैंग्वेज प्रॉम्प्ट का उपयोग करके सिस्टम कार्य निष्पादित करना</a></span>
+  <span class="next"><a href="../appendix/appendix.html">परिशिष्ट</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <img src="../../../_/img/rhl-logo-red.png" height="40px" alt="Red Hat"  href="https://redhat.com" >
+</footer><script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+<script defer src="../../../_/js/vendor/tabs.js"></script>
+<script defer src="../../../_/js/vendor/reading-time.js"></script>
+  </body>
+</html>
